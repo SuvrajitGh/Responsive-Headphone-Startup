@@ -1,0 +1,71 @@
+/* navbar.css */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-button {
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.secondary-button {
+  border: 1px solid cornflowerblue;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+}
+
+.secondary-button:hover {
+  border: 1px solid mediumblue;
+}
+
+.primary-button:hover {
+  /* color: white; */
+  background-color: mediumblue;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.hover-links:hover {
+  color: cornflowerblue;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Responsive Styles for screens up to 991px width (Tablets and below) */
+@media screen and (max-width: 991px) {
+  .navbar.wrapper {
+    /* background-color: plum; */
+    padding-inline: 2vw;
+  }
+
+  .navbar .navln {
+    display: none;
+  }
+
+  .navbar .nav-toggle {
+    display: block;
+  }
+}
+
+
+/* Responsive Styles for screens up to 600px width (Phones) */
+@media screen and (max-width: 600px) {
+  .navbar.wrapper {
+    /* background-color: darkcyan; */
+    padding-inline: 2vw;
+  }
+
+  .navbar .nav-toggle {
+    display: block;
+  }
+}
